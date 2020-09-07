@@ -137,8 +137,12 @@
         </div>
     </div>
 </footer>
+<?php if ( is_home() ) : ?>
 <script type='text/javascript' src='<?php echo get_theme_file_uri('/src/js/exhib-and-books-intro-animation.js'); ?>' id='blog-animation'></script>
+<?php endif; ?>
+<?php if ( is_front_page() ) : ?>
 <script type='text/javascript' src='<?php echo get_theme_file_uri('/src/js/index-images-animation.js'); ?>' id='index-animation'></script>
+<?php endif; ?>
 <script type='text/javascript' src='<?php echo get_theme_file_uri('/src/js/menu-animation.js'); ?>' id='menu-animation'></script>
 <?php wp_footer(); ?>
 </body>

@@ -9,7 +9,6 @@ get_header();
     <div class="exhibitions">
         <div class="exhibitions__intro">
             <h2 class="exhibitions__title"><span class="mid-underline">Nos </span>expos</h2>
-            <a href="#exhibitions__items" class="exhibs-arrow__bottom">Découvrir</a>
         </div>
         <div id="exhibitions__items">
             <div class="exhibitions__item">
@@ -39,7 +38,6 @@ get_header();
     <div class="books">
         <div class="books__intro">
             <h2 class="books__title">Nos liv<span class="mid-underline">res</span></h2>
-            <a href="#books__items" class="books-arrow__bottom">Découvrir</a>
         </div>
         <div id="books__items">
             <div class="books__item">
