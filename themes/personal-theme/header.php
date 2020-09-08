@@ -61,21 +61,11 @@
         <div class="menu" id="nav">
             <nav class="main-nav">
                 <h2 class="invisible">Navigation principale</h2>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link active" title="Accueil">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="./html/about.html" class="main-nav__link" title="À propos">À Propos</a>
-                    </li>
-                    <li>
-                        <a href="./html/exhibitions-and-books.html" class="main-nav__link" title="Expos et livres">Expos
-                            et livres</a>
-                    </li>
-                    <li>
-                        <a href="./html/contact.html" class="main-nav__link" title="Contact">Contact</a>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'headerMenuLocation',
+                ));
+                ?>
             </nav>
         </div>
         <div class="social-networks">

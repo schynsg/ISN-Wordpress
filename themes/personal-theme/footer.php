@@ -113,22 +113,11 @@
                 <p class="menu__intro">Menu</p>
                 <nav class="footer-nav">
                     <h2 class="invisible">Navigation secondaire</h2>
-                    <ul class="footer-nav__list">
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link" title="Accueil">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="./html/about.html" class="footer-nav__link" title="À propos">À Propos</a>
-                        </li>
-                        <li>
-                            <a href="./html/exhibitions-and-books.html" class="footer-nav__link"
-                               title="Expos et livres">Expos
-                                et livres</a>
-                        </li>
-                        <li>
-                            <a href="./html/contact.html" class="footer-nav__link" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'headerMenuLocation',
+                    ));
+                    ?>
                 </nav>
             </div>
             <div class="legal-text">

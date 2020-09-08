@@ -4,6 +4,7 @@ function test_files() {
 }
 function setup_features() {
     add_theme_support('title-tag');
+    register_nav_menu('headerMenuLocation', 'Principal menu');
 }
 
 function post_types() {

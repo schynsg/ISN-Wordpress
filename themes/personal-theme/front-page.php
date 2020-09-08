@@ -144,15 +144,17 @@ get_header();
                     <p class="small italic">Par <span itemprop="funder">Olivier Cornil & Manu D'Autreppe</span></p>
                 </div>
                 <div class="about__main">
-                    <p>L’Image sans nom est lieu d’expositions liées
-                        à la photographie et au livre, souvent aux
-                        deux. Il est aussi un centre de
-                        documentation : fort de quelques milliers de
-                        titres, principalement de photographie, et
-                        d’autres arts également, disponibles en
-                        consultation. Il est enfin un atelier
-                        d'impression jet d’encre ouvert à toute
-                        demande.</p>
+                <?php
+
+                $intro = new WP_Query(array(
+                    'posts_per_page' => 1,
+                    'post_type' => 'index-intro',
+                ));
+
+                while ($intro->have_posts()) {
+                    $intro->the_post(); ?>
+                    <p><?php echo get_the_content(); ?></p>
+                <?php }  wp_reset_postdata(); ?>
                 </div>
                 <div class="about__link">
                     <a href="./html/about.html" class="arrow-right">
