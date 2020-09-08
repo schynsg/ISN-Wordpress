@@ -1,4 +1,3 @@
-Event
 <?php
 
 get_header();

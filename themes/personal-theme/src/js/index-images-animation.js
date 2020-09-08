@@ -11,7 +11,7 @@ function getImageSrc(){
     } else if (imageNumber >= imageCount){
         imageNumber = 1;
     }
-    imageSrc = '<?php echo get_theme_file_uri(\'/src/img/intro-img' + imageNumber + '.jpg\'); ?>';
+    imageSrc = './src/img/intro-img' + imageNumber + '.jpg';
 };
 
 function changeBtnColor() {

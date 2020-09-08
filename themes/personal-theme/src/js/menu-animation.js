@@ -7,4 +7,5 @@ closeMenuLink.addEventListener('click', openOrDeleteMenu);
 
 function openOrDeleteMenu() {
     menuElt.classList.toggle('not-working');
+    console.log('test')
 }
