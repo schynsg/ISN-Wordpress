@@ -12,7 +12,7 @@ get_header();
         <h2 class="main-title"><span class="mid-underline">À pr</span>opos</h2>
         <div class="about">
             <div class="about__image">
-                <img src="../src/img/about-img.jpg" alt="Facade de L'Image Sans Nom" height="1460" width="960">
+                <img src="<?php echo get_theme_file_uri('/src/img/about-img.jpg'); ?>" alt="Facade de L'Image Sans Nom" height="1460" width="960">
             </div><!--
         --><div class="about__text">
                 <h3 class="bold" itemprop="name"><span class="mid-underline">L'Im</span>age Sans Nom</h3>

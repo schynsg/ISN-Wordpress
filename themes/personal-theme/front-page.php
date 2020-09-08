@@ -157,7 +157,7 @@ get_header();
                 <?php }  wp_reset_postdata(); ?>
                 </div>
                 <div class="about__link">
-                    <a href="./html/about.html" class="arrow-right">
+                    <a href="<?php echo site_url('/about/'); ?>" class="arrow-right">
                         À Propos
                     </a>
                 </div>

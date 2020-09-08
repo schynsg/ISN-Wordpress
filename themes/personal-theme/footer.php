@@ -121,7 +121,7 @@
                 </nav>
             </div>
             <div class="legal-text">
-                <p><a href="#">© 2020 L'image sans nom</a> - Tous droits réservés</p>
+                <p><a href="<?php echo site_url(''); ?>">© 2020 L'image sans nom</a> - Tous droits réservés</p>
             </div>
         </div>
     </div>
