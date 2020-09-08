@@ -25,9 +25,18 @@ function post_types() {
         ),
         'menu_icon' => 'dashicons-book',
     ));
+    register_post_type('index-intro', array(
+        'public' => true,
+        'labels' => array(
+            'name' => 'Introduction homepage',
+            'add_new_item' => 'Ajouter une introduction',
+            'edit_item' => 'Modifier une introduction',
+        ),
+        'menu_icon' => 'dashicons-text-page',
+    ));
 }
 
-add_action('wp_enqueue_scripts', 'test_files');
+// add_action('wp_enqueue_scripts', 'test_files');
 add_action('after_setup_theme', 'setup_features');
 
 add_action('init', 'post_types');

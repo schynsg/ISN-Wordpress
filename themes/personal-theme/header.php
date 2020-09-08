@@ -16,6 +16,7 @@
     <!--[if IE]>
     <link rel="shortcut icon" href="">
     <![endif]-->  <!-- Insérer le chemin vers l'icon .ico -->
+    <link rel="stylesheet" id="style-css" href="<?php echo get_theme_file_uri('style.css'); ?>" type="text/css">
     <?php wp_head(); ?>
 </head>
 <body itemscope itemtype="https://schema.org/Organization">

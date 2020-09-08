@@ -93,43 +93,23 @@ get_header();
             </ul>
         </div>
         <div class="contact__form">
-            <form action="#">
-                <div class="form__subject">
-                    <p class="subject__label">Quel est l'objet de votre demande ?</p>
-                    <div>
-                        <input type="radio" id="rdv" name="object" value="rdv"
-                               checked><!--
+            <div class="form__subject">
+                <p class="subject__label">Quel est l'objet de votre demande ?</p>
+                <div>
+                    <input type="radio" id="rdv" name="object" value="rdv"
+                           checked><!--
                     --><label for="rdv">Rendez-vous</label>
-                    </div><!--
+                </div><!--
                 --><div>
-                        <input type="radio" id="group" name="object" value="group"><!--
+                    <input type="radio" id="group" name="object" value="group"><!--
                     --><label for="group">Visite de groupe</label>
-                    </div><!--
+                </div><!--
                 --><div>
-                        <input type="radio" id="other" name="object" value="other"><!--
+                    <input type="radio" id="other" name="object" value="other"><!--
                     --><label for="other">Autre</label>
-                    </div>
                 </div>
-                <div class="contact__standart-questions">
-                    <div class="contact__surname">
-                        <label for="contact-surname">Nom</label>
-                        <input type="text" id="contact-surname" name="contact-surname" placeholder="Votre nom">
-                    </div>
-                    <div class="contact__name">
-                        <label for="contact-name">Prénom</label>
-                        <input type="text" id="contact-name" name="contact-name" placeholder="Votre prénom">
-                    </div>
-                    <div class="contact__phone">
-                        <label for="contact-phone">Téléphone</label>
-                        <input type="tel" id="contact-phone" name="contact-phone" placeholder="0000 00 00 00">
-                    </div>
-                    <div class="contact__message">
-                        <label for="contact-message">Votre message</label>
-                        <textarea id="contact-message" name="contact-message" rows="3" cols="50">Bonjour, ...</textarea>
-                    </div>
-                    <input type="submit" class="arrow-right" value="Envoyer">
-                </div>
-            </form>
+            </div>
+            <?php echo do_shortcode( '[contact-form-7 id="47" title="Main form"]' ); ?>
         </div>
     <?php endif; ?>
 

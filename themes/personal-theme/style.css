@@ -1231,6 +1231,7 @@ div .exhibitions__title{
     .contact__main .contact__form {
         grid-column: 1/5;
         grid-row: 3/5;
+        min-height: 300px;
         overflow: auto;
     }
 
@@ -1346,4 +1347,30 @@ div .exhibitions__title{
 
 .books .vertical {
     margin: 0 0 0 10%;
+}
+
+.wpcf7 form p {
+    margin-top: 5%;
+}
+
+input.wpcf7-text, textarea.wpcf7-textarea{
+    padding: 2%;
+    width: 95%;
+    background-color: transparent;
+    color: #434343;
+    border: 2px solid #434343;
+    margin-top: 3%;
+}
+
+textarea.wpcf7-textarea{
+    height: 3em;
+}
+
+input.wpcf7-submit{
+    background-color: transparent;
+}
+
+.form__subject{
+    margin: 7% 15% 0 15%;
+    position: relative;
 }
